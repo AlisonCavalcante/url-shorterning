@@ -1,0 +1,42 @@
+.container{
+  background-image: url('../../../assets/image/bg-shorten-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  align-items: center;
+  background-color: rgb(115, 64, 167);
+  border-radius: 5px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 30px;
+}
+
+.content-btn{
+  display: flex;
+  justify-content: end;
+}
+
+.btn{
+  background-color: aquamarine;
+  color: white;
+  border-radius: 5px;
+}
+
+@media (max-width:759px){
+
+  .container{
+    height: auto;
+  }
+  .content-btn{
+    display: block;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .btn{
+    width: 100%;
+  }
+}
