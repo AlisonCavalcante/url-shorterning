@@ -1,0 +1,29 @@
+*{
+  color: white;
+  font-weight: bold ;
+}
+.navbar{
+  height: 250px;
+}
+.container{
+
+}
+.list_content{
+  display: flex;
+  justify-content: center;
+}
+.list_redes-sociais i{
+  font-size: 30px;
+  margin-right: 1rem;
+}
+.list_redes-sociais, li{
+  display: flex;
+  list-style: none;
+  color: grey;
+}
+
+ul{
+  padding: 0px;
+}
+
+
