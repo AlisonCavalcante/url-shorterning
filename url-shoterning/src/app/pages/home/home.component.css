@@ -1,0 +1,87 @@
+.content-incial {
+  margin-bottom: 7%;
+}
+.btn-started {
+  background-color: rgb(94, 204, 204);
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.content-tiles-princiais {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content-tiles-princiais h1 {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.content-tiles-princiais p {
+  color: grey;
+  font-weight: bold;
+}
+
+.img-responsive {
+  height: 100%;
+  width: 100%;
+}
+
+.advanced-statistics {
+  height: auto;
+  background-color: rgb(250, 247, 247);
+  text-align: center;
+}
+
+.advanced-statistics__titles {
+  font-weight: bold;
+  padding: 5%;
+}
+
+.advanced-statistics__titles p {
+  color: grey;
+  font-weight: bold;
+}
+
+.content__cards{
+  padding: 5%;
+}
+
+.line-sobreposta {
+  position: absolute;
+  width: 75%;
+  margin-left: 20px;
+  margin-top: 8%;
+  height: 10px;
+  background-color: rgb(94, 204, 204);
+}
+
+.pre-footer {
+  color: white;
+  height: 250px;
+  text-align: center;
+  align-items: center;
+  background-image: url("../../../assets/image/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(115, 64, 167);
+}
+
+
+@media (max-width: 1199px){
+  .line-sobreposta{
+    width: 60%;
+  }
+}
+
+@media (max-width: 753px){
+  .content__cards{
+    justify-content: center;
+  }
+  .line-sobreposta{
+    width: 5px;
+    height: 80vh;
+  }
+}

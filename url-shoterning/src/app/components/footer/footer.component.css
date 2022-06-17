@@ -15,11 +15,13 @@
 .list_redes-sociais i{
   font-size: 30px;
   margin-right: 1rem;
+  cursor: pointer;
 }
 .list_redes-sociais, li{
   display: flex;
   list-style: none;
   color: grey;
+  cursor: pointer;
 }
 
 ul{
@@ -27,3 +29,31 @@ ul{
 }
 
 
+li:hover, i:hover{
+  color: aqua;
+}
+
+
+@media (max-width:767px){
+  .navbar{
+    height: auto;
+  }
+  .row, ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .list_redes-sociais{
+    display: flex;
+    flex-direction: row;
+  }
+  .logo-content{
+    margin: 20px 0px;
+    padding: 0;
+  }
+  .logo-content span{
+    margin: 0px;
+  }
+}

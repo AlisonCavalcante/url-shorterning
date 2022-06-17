@@ -1,17 +1,27 @@
-.container{
+.content{
+  display: flex;
+  justify-content: center;
+}
+.card{
   background-image: url('../../../assets/image/bg-shorten-desktop.svg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100px;
+  width: 70%;
   align-items: center;
   background-color: rgb(115, 64, 167);
   border-radius: 5px;
+  z-index: 10;
+  top: 32em;
+  left: 5;
+  position: absolute;
 }
 
 .row{
   display: flex;
   align-items: center;
   height: 100%;
+  width: 100%;
   padding: 30px;
 }
 
