@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div class="container">
   <div class="row content-incial">
-    <div class="col-md-6 content-tiles-princiais">
+    <div class="col-md-6 col-12 content-tiles-princiais">
       <h1>More than just shorterlinks</h1>
       <p>
         Builder your brand's recognition and get delailed <br />
@@ -11,7 +11,7 @@
         <app-button [textButton]="'Get Started'"></app-button>
       </div>
     </div>
-    <div class="col-md-6 col-12">
+    <div class="col-md-6">
       <img
         class="img-responsive"
         src="../../../assets/image/illustration-working.svg"
@@ -21,7 +21,22 @@
   </div>
 </div>
 <section class="advanced-statistics">
-  <app-search></app-search>
+  <app-search (urlEmmit)="getUrlShortening($event)"></app-search>
+  <div style="margin-top: 100px" class="container">
+    <div class="card mb-2 shadow" *ngFor="let url  of urls | slice: 0:4">
+      <div style="padding: 15px" class="row">
+        <div class="col-md-6 col__url-info col__url-info--original"><p>{{url.result.original_link}}</p></div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6 col__url-info--short" #urlshort>{{url.result.full_short_link}}</div>
+            <div class="col-md-6 col__url-info">
+              <button class="btn btn-copy" (click)="copyUrl(urlshort)">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div class="advanced-statistics__titles">
       <h2>Advanced Statistics</h2>
