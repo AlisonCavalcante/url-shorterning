@@ -1,12 +1,14 @@
 <div class="content">
   <div class="card">
     <div class="row">
-      <div class="col-md-10">
-        <input class="form-control" type="text" placeholder="shorten a link here...">
-      </div>
-      <div class="col-md-2 content-btn">
-        <button class="btn">Shorten It!</button>
-      </div>
+      <form [formGroup]="formUrl" (ngSubmit)="submitUrl()" style="display: flex">
+        <div class="col-md-10">
+          <input formControlName="url" class="form-control" type="text" placeholder="shorten a link here...">
+        </div>
+        <div class="col-md-2 content-btn">
+          <button type="submit" [disabled]="!formUrl.valid" class="btn">Shorten It!</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
