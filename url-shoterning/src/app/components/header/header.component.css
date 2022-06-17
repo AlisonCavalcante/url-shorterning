@@ -16,5 +16,10 @@
   font-weight: bold;
 }
 .navbar-toggler{
-  color: black ;
+  color: black;
+}
+
+.nav-item a:hover{
+  color: black;
+  cursor: pointer;
 }

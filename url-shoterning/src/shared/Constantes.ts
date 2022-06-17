@@ -1,3 +1,3 @@
-export class IConstantes{
-  public static URL_BASE = 'https://api.shrtco.de/v2/';
+export class Constantes{
+  public static URL_GET = 'https://api.shrtco.de/v2/shorten?url=';
 }
