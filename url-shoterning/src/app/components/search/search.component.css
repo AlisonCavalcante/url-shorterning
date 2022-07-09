@@ -50,3 +50,15 @@
     width: 100%;
   }
 }
+
+@media (max-width: 1400px){
+  .card{
+    top: 28em;
+  }
+}
+
+@media (max-width: 768px){
+  .card{
+    top: 42em;
+  }
+}

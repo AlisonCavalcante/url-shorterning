@@ -8,15 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   urls: any[] = [];
+  emitFinishLoading!: number;
   constructor(private urlService: UrlService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.emitFinishLoading = 0;
+  }
 
   getUrlShortening(url: string) {
     this.urlService.getUrl(url).subscribe((res) => {
-      if(this.urls.length >= 4){
-        this.urls.unshift(res);
-      } else {
+      this.emitFinishLoading += 1;
+      if(this.urls.length >= 4) this.urls.unshift(res);
+       else {
         this.urls.push(res);
       }
     });

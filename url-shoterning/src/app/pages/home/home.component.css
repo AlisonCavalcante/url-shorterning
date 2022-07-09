@@ -35,11 +35,13 @@
   justify-content: center;
 }
 
-.col__url-info p {
-  margin: 0;
-}
 .col__url-info--short{
   color: rgb(94, 204, 204);
+}
+
+
+.col__url-info p {
+  margin: 0;
 }
 
 .btn-copy{

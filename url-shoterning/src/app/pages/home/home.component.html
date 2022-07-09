@@ -21,7 +21,7 @@
   </div>
 </div>
 <section class="advanced-statistics">
-  <app-search (urlEmmit)="getUrlShortening($event)"></app-search>
+  <app-search [replaceLoading]="emitFinishLoading"  (urlEmmit)="getUrlShortening($event)"></app-search>
   <div style="margin-top: 100px" class="container">
     <div class="card mb-2 shadow" *ngFor="let url  of urls | slice: 0:4">
       <div style="padding: 15px" class="row">

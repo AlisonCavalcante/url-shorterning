@@ -6,7 +6,10 @@
           <input formControlName="url" class="form-control" type="text" placeholder="shorten a link here...">
         </div>
         <div class="col-md-2 content-btn">
-          <button type="submit" [disabled]="!formUrl.valid" class="btn">Shorten It!</button>
+          <button type="submit" [disabled]="!formUrl.valid" class="btn">
+            Shorten It!
+            <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+          </button>
         </div>
       </form>
     </div>
